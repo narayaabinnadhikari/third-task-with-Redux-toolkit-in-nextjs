@@ -29,7 +29,7 @@ export default function Page() {
       <h3 className="text-2xl flex justify-center">Todo List</h3>
       { todoData.length && todoData.map((item)=>(
 
-        <h4 key={item.name}>{item.name}</h4>
+        <h4 key={item.id}>{item.name}</h4>
    )) }
       </div>
     </div>

@@ -14,7 +14,7 @@ function DisplayUsers() {
       {userData.map((item) => (
         <div
           className="bg-gray-200 mt-2 p-2 rounded w-90 text.lg text-black flex justify-between"
-          key={item.name}
+          key={item.id}
         >
           <span>{item.name}</span>
           <button

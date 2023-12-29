@@ -35,6 +35,8 @@ const Slice = createSlice({
         return item.id !== action.payload;
       });
       state.users = data;
+      let userData = JSON.stringify(data);
+      localStorage.setItem("users", userData);
     },
   },
   extraReducers: (builder) => {
